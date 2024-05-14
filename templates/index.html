@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Write your link</h2>
+    <form action="/text-sum" method="POST">
+        <input type="text" name="url" id="url">
+        <input type="submit" name="submit" id="submit">
+    </form>
+
+
+
+    <h2>Upload PDF, TXT or DOCX File</h2>
+    <form action="/text-sum" method="POST" enctype="multipart/form-data" id="uploadForm">
+        <input type="file" name="file1" id="file" accept=".pdf,.docx,.txt">
+        <input type="submit" value="Upload" id="submit">
+    </form>
+
+
+
+
+    <h2>Upload Video File</h2>
+    <form action="/text-sum" method="post" enctype="multipart/form-data" id="uploadForm">
+        <input type="file" name="file" id="file" accept="video/*">
+        <p style="font-size: 14px;">English vedio Maximum duration: 6 minutes</p>
+        <input type="submit" value="Upload" id="submit">
+    </form>
+
+
+
+
+<!--CSS-->
+<style>
+    body {
+    font-family: Arial, sans-serif;  /* Set a clean and readable font */
+    margin: 20px;                  /* Add some space around the content */
+  }
+  
+  h2 {
+    margin-top: 1.5em;              /* Add some space between headings */
+    margin-bottom: 0.5em;          /* Add some space below headings */
+  }
+  
+  form {
+    display: flex;                 /* Arrange elements horizontally */
+    margin-bottom: 1em;            /* Add space between forms */
+  }
+  
+  form input[type="text"],
+  form input[type="file"] {
+    padding: 10px;                 /* Add padding for better user input */
+    border: 1px solid #ccc;        /* Add a thin border */
+    border-radius: 3px;            /* Round corners for a softer look */
+    margin-right: 10px;            /* Add space between input and submit button */
+    width: calc(100% - 80px);      /* Dynamically adjust width based on submit button */
+  }
+  
+  form input[type="submit"] {
+    padding: 10px 20px;             /* Add some padding for the button */
+    background-color: #4CAF50;    /* Green color for submit button */
+    color: white;                  /* White text for better contrast */
+    border: none;                  /* Remove border from submit button */
+    border-radius: 3px;            /* Round corners for the button */
+    cursor: pointer;               /* Indicate clickable action on hover */
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #3e8e41;    /* Darker green on hover */
+  }
+  
+</style>    
+</body>
+</html>
