@@ -27,7 +27,7 @@ Install dependencies: Install required libraries using pip install.
 
 ### 5. Getting More Information
 
-Link to your YouTube video demo: https://youtu.be/SxU45wp_ViQ
+Link to your YouTube video demo: https://youtu.be/h67Frb9X_OY
 the vedio describe each ligne of the code and how to use the interface
 Link to LinkedIn post about the project: https://www.linkedin.com/in/ben-saad-yasmine-039995207/
 
